@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Minimalista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Reset y variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+        
+        /* Contenedor principal */
+        .container {
+            width: 100%;
+            max-width: 1800px;
+            padding: 60px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* Imagen rectangular minimalista */
+        .profile-image {
+            width: 100%;
+            max-width: 1800px;
+            height: 800px;
+            margin-bottom: 10px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+        
+        /* REEMPLAZA ESTA IMAGEN */
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            object-position: center;
+        }
+        
+        /* Texto */
+        .text-content {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .text-content h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .text-content p {
+            font-size: 1rem;
+            color: #333333;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        /* Botones con bordes redondeados */
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        .button {
+            padding: 12px 25px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid #000000;
+            border-radius: 25px; /* Bordes completamente redondeados */
+            text-align: center;
+            min-width: 160px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .button:hover {
+            opacity: 0.9;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            .profile-image {
+                height: 250px;
+                margin-bottom: 40px;
+            }
+            
+            .text-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Espacio para tu imagen -->
+        <div class="profile-image">
+            <!-- REEMPLAZA ESTA IMAGEN -->
+            <!-- Cambia "src="tu-imagen.jpg"" por tu archivo -->
+            <!-- Ejemplo: src="mi-foto.jpg" (misma carpeta) -->
+            <!-- Ejemplo: src="imagenes/mi-portfolio.jpg" (subcarpeta) -->
+            <img src="img /xime.png" alt="Mi trabajo">
+        </div>
+        
+        <div class="text-content">
+            <h1>Soy diseñadora</h1>
+            <p>Enfoque minimalista en cada proyecto. Funcionalidad y estética en equilibrio.</p>
+        </div>
+        
+        <div class="buttons">
+            <a href="practica1.html" class="button">Práctica 1</a>
+            <a href="practica2.html" class="button">Práctica 2</a>
+            <a href="practica3.html" class="button">Práctica 3</a>
+        </div>
+    </div>
+</body>
+</html>
